@@ -79,7 +79,7 @@ body {
 }
 
 .link-block a {
-    margin: 8px 4px;
+    margin: 4px 4px;
 }
 
 .dnerf {
@@ -112,6 +112,23 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* Reduce gap between the top hero and the next section */
+.hero-header .hero-body {
+  padding-bottom: 1.5rem !important;   /* 原来 4rem */
+}
+
+.hero-after-header .hero-body {
+  padding-top: 1.5rem !important;      /* 原来 4rem */
+}
+
+.hero-abstract .hero-body {
+  padding-top: 1.5rem !important;
+  padding-bottom: 0rem !important;
+}
+.hero-image-carousel .hero-body {
+  padding-top: 0rem !important;
+  padding-bottom: 1.5rem !important;
+}
 
 /* Publication Content Styling */
 .publication-title {
@@ -148,7 +165,7 @@ body {
 .publication-authors {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .publication-venue {
